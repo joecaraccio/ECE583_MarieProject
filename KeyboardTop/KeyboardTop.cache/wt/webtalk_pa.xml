@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Sun May 07 11:48:40 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="126f77c40e94438dab79006dc2107fb2" type="ProjectID"/>
+<property name="ProjectIteration" value="3" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="6" type="JavaHandler"/>
+<property name="RunBitgen" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="BaseDialog_OK" value="13" type="GuiResourceData"/>
+<property name="ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS" value="1" type="GuiResourceData"/>
+<property name="ConstraintsChooserPanel_CREATE_FILE" value="1" type="GuiResourceData"/>
+<property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiResourceData"/>
+<property name="CreateSrcFileDialog_FILE_NAME" value="7" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="59" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_ADD_SOURCES" value="6" type="GuiResourceData"/>
+<property name="PACommandNames_AUTO_UPDATE_HIER" value="6" type="GuiResourceData"/>
+<property name="SaveProjectUtils_SAVE" value="1" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE" value="5" type="GuiResourceData"/>
+<property name="SrcChooserPanel_CREATE_FILE" value="5" type="GuiResourceData"/>
+<property name="SrcMenu_IP_HIERARCHY" value="6" type="GuiResourceData"/>
+</item>
+</section>
+</application>
+</document>

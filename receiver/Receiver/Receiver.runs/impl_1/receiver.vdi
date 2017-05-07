@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun May 07 11:12:55 2017
+# Process ID: 15252
+# Current directory: F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1
+# Command line: vivado.exe -log receiver.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source receiver.tcl -notrace
+# Log file: F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1/receiver.vdi
+# Journal file: F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source receiver.tcl -notrace
+Command: open_checkpoint receiver_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 209.379 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1/.Xil/Vivado-15252-Skipper-PC/dcp/receiver.xdc]
+Finished Parsing XDC File [F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1/.Xil/Vivado-15252-Skipper-PC/dcp/receiver.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 458.633 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.155 . Memory (MB): peak = 458.633 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.4 (64-bit) build 1756540
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:32 . Memory (MB): peak = 458.633 ; gain = 249.254
+Command: write_bitstream -force -no_partial_bitfile receiver.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./receiver.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'F:/receiverTransmitters/receiver/Receiver/Receiver.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun May 07 11:14:26 2017. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 822.250 ; gain = 363.617
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file receiver.hwdef
+INFO: [Common 17-206] Exiting Vivado at Sun May 07 11:14:27 2017...
