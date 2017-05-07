@@ -1,0 +1,25 @@
+FSM tutorial
+
+This FSM module is a debugging tool used to quickly and easily read register values. It
+uses a keyboard to select the register, and then displays the contents of that register on
+a seven segment display. It is implemented using a finite state machine.
+
+After programming the device in vivado, the keyboard accepts 8 different inputs.
+
+m key: Loads and displays contents of MAR.
+
+b key: Loads and displays contents of MBR.
+
+i key: Loads and displays contents of IR.
+
+p key: Loads and displays contents of PC.
+
+n key: Loads and displays contents of INREG.
+
+o key: Loads and displays contents of OUTREG.
+
+a key: Loads and displays contents of AC.
+
+r key: RESET key, this key MUST be used after every register load if you want to load another register.
+       Will reset ssd to 0000.
+	  

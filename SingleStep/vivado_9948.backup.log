@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 02 16:23:17 2017
+# Process ID: 9948
+# Current directory: F:/SingleStep
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9932 F:\SingleStep\SingleStep.xpr
+# Log file: F:/SingleStep/vivado.log
+# Journal file: F:/SingleStep\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/SingleStep/SingleStep.xpr
+INFO: [Project 1-313] Project file moved from 'I:/SingleStep' sinINFO: [Common Scanning sources...
+Finished scanningexit
+INFO: [Common 17-206] Exiting Vivado at Tue May 02 16:24:36 2017...
+ 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 704.270 ; gain = 95.176
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 02 16:25:02 2017...
+[Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 02 16:25:45 2017...

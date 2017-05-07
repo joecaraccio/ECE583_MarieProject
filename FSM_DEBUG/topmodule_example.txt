@@ -1,0 +1,47 @@
+Here is what the top module should look like.
+
+module top( 
+	input clk,
+    input PS2Data,
+    input PS2Clk,
+    output [6:0] segment,
+    output enable_D1,
+    output enable_D2,
+    output enable_D3,
+    output enable_D4,
+    input [15:0] MARdata,
+    input [15:0] MBRdata,
+    input [15:0] IRdata,
+    input [15:0] PCdata,
+    input [15:0] INREGdata,
+    input [15:0] OUTREGdata,
+    input [15:0] ACdata
+);
+
+
+FSM regDebug( 
+	.clk(clk),
+	.PS2Data(PS2Data),
+	.PS2Clk(PS2CLK),
+	.segment(segment),
+	.enable_D1(enable_D1),
+	.enable_D2(enable_D2),
+	.enable_D3(enable_D3),
+	.enable_D4(enable_D4),
+	.MARdata(MARdata),
+	.MBRdata(MBRdata),
+	.IRdata(IRdata),
+	.PCdata(PCdata),
+	.INREGdata(INREGdata),
+	.OUTREGdata(OUTREGdata),
+	.ACdata(ACdata)
+);
+
+endmodule
+
+There are 15 total parameters, 1 will be your clock, 2 will be for the keyboard inputs. 
+5 will be for enabling and driving the SSD, and the remaining 7 are your register inputs. 
+
+The 16 bit data registers are where your actual registers data values are supposed to go, 
+the ones I have are just placeholders for now, use whatever variable you are using for those 
+inputs.

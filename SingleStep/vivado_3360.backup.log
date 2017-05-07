@@ -1,0 +1,226 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 02 10:57:59 2017
+# Process ID: 3360
+# Current directory: I:/SingleStep
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6068 I:\SingleStep\SingleStep.xpr
+# Log file: I:/SingleStep/vivado.log
+# Journal file: I:/SingleStep\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project I:/SingleStep/SingleStep.xpr
+INFO: [Project 1-313] Project file moved from 'F:/SingleStep' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 753.484 ; gain = 82.328
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A38876A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+close [ open I:/SingleStep/SingleStep.srcs/sources_1/new/SingleStepper.v w ]
+add_files I:/SingleStep/SingleStep.srcs/sources_1/new/SingleStepper.v
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 934.094 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 11:48:38 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 11:48:38 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 934.094 ; gain = 0.000
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 934.094 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 11:50:35 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 11:50:35 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 11:54:15 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 11:54:15 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:02:56 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:02:56 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:07:43 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:07:43 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:12:25 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:12:25 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:17:38 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:17:38 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:22:20 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:22:20 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 962.289 ; gain = 0.000
+reset_run impl_1 -prev_step 
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'reset_run' was cancelled
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:26:10 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:26:10 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:34:14 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:34:14 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {I:/SingleStep/SingleStep.runs/impl_1/top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 962.289 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue May 02 12:38:40 2017] Launched synth_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/synth_1/runme.log
+[Tue May 02 12:38:40 2017] Launched impl_1...
+Run output will be captured here: I:/SingleStep/SingleStep.runs/impl_1/runme.log
+reset_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+reset_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 962.289 ; gain = 0.000
+INFO: [Common 17-344] 'reset_run' was cancelled
